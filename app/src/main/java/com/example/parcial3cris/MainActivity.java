@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Inicializar vistas
         btnInsertar = findViewById(R.id.btnInsertar);
         btnBorrar = findViewById(R.id.btnBorrar);
-        btnActualizar = findViewById(R.id.btnActualizar);  
+        btnActualizar = findViewById(R.id.btnActualizar);
         etNombre = findViewById(R.id.etNombre);
         etApellido = findViewById(R.id.etApellido);
         etTelefono = findViewById(R.id.etTelefono);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // Realiza la búsqueda en la base de datos utilizando los valores ingresados
                 // en los EditText y muestra los resultados en una nueva pantalla o en un diálogo
                 // según tus necesidades
-                realizarBusqueda(nombre, apellido, telefono, correo);
+                //realizarBusqueda(nombre, apellido, telefono, correo);
             }
         });
 
