@@ -33,6 +33,15 @@
         android:layout_below="@id/btnBorrar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:layout_below="@id/etCorreo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
 
     <EditText
         android:id="@+id/etNombre"

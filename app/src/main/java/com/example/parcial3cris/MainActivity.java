@@ -21,14 +21,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Inicializar vistas
         btnInsertar = findViewById(R.id.btnInsertar);
         btnBorrar = findViewById(R.id.btnBorrar);
-        btnActualizar = findViewById(R.id.btnActualizar);
+        btnActualizar = findViewById(R.id.btnActualizar);  
         etNombre = findViewById(R.id.etNombre);
         etApellido = findViewById(R.id.etApellido);
         etTelefono = findViewById(R.id.etTelefono);
         etCorreo = findViewById(R.id.etCorreo);
 
+        // Encuentra la referencia al botón buscar
+        Button btnBuscar = findViewById(R.id.btnBuscar);
 
-        // Establecer clic listeners para los botones
+// Asigna un listener para manejar el clic en el botón buscar
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lógica para manejar la búsqueda
+                // Puedes obtener los valores ingresados en los EditText correspondientes
+                // (etNombre, etApellido, etTelefono, etCorreo) y realizar la búsqueda en la base de datos
+                // utilizando una consulta SQL con los criterios de búsqueda necesarios
+                String nombre = etNombre.getText().toString();
+                String apellido = etApellido.getText().toString();
+                String telefono = etTelefono.getText().toString();
+                String correo = etCorreo.getText().toString();
+
+                // Realiza la búsqueda en la base de datos utilizando los valores ingresados
+                // en los EditText y muestra los resultados en una nueva pantalla o en un diálogo
+                // según tus necesidades
+                realizarBusqueda(nombre, apellido, telefono, correo);
+            }
+        });
+
+
+
+
         btnInsertar.setOnClickListener(this);
         btnBorrar.setOnClickListener(this);
         btnActualizar.setOnClickListener(this);
